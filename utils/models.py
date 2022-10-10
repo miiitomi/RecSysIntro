@@ -21,4 +21,4 @@ class Metrics:
     recall_at_k: float
 
     def __repr__(self) -> str:
-        return f"rmse={self.rmse:.3f}, Precision@K={self.precision_at_k:.3f}, Recall@K{self.recall_at_k:.3f}"
+        return f"RMSE={self.rmse:.3f}, Precision@K={self.precision_at_k:.3f}, Recall@K={self.recall_at_k:.3f}"

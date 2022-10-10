@@ -46,6 +46,6 @@ class MetricCalculator:
     ) -> float:
         scores = []
         for user_id in true_user2items.keys():
-            p_at_k = self._precision_at_k(true_user2items[user_id], pred_user2items[user_id])
+            p_at_k = self._precision_at_k(true_user2items[user_id], pred_user2items[user_id], k)
             scores.append(p_at_k)
         return np.mean(scores)
